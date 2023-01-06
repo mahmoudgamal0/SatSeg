@@ -1,0 +1,9 @@
+**__pycache__**
+data/
+repos/
+
+NVIDIA-Linux-x86_64-495.46.run
+cuda-keyring_1.0-1_all.deb
+
+viewer
+*.png
