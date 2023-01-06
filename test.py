@@ -48,7 +48,7 @@ def main():
 
     # --------- 2. model define ---------
     net = U2NET(3, 8)
-    model_dir = "./data/saved_models/u2net_ce_itr_78000_train_5.179635_tar_0.726550_acc_70.420000.pth"
+    model_dir = "./data/saved_models/u2net_ce_itr_60000_train_2.926613_tar_0.394471_acc_87.040000.pth"
 
     
     if torch.cuda.is_available():
@@ -79,14 +79,6 @@ def main():
 
         save_image(i, jpg_image, jpg_mask)
         print(f'saved sample {i}')
-        # normalization
-        # pred = d1[:,0,:,:]
-        # pred = normPRED(pred)
-
-        # save results to test_results folder
-        # if not os.path.exists(prediction_dir):
-        #     os.makedirs(prediction_dir, exist_ok=True)
-        # save_output(img_name_list[i_test],pred,prediction_dir)
 
         del d0,d1,d2,d3,d4,d5,d6
 
